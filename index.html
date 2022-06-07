@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>TODO APP</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="app"></div>
-    <p>First commit</p>
+    <div class="input-area">
+      <input placeholder="Type TODO" />
+      <button>Add</button>
+    </div>
+    <div class="incomplete-area">
+      <p class="title">Unfinished</p>
+      <ul>
+        <div class="list-row">
+          <li>TODO</li>
+          <button>Finished</button>
+          <button>Delete</button>
+        </div>
+      </ul>
+    </div>
+
+    <div class="complete-area">
+      <p class="title">Finished</p>
+      <ul>
+        <div class="list-row">
+          <li>TODO</li>
+          <button>Finished</button>
+          <button>Return</button>
+        </div>
+      </ul>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
