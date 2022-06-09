@@ -24,7 +24,9 @@ const onClickAdd = () => {
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "Delete";
   deleteButton.addEventListener("click", () => {
-    alert("Delete");
+    // delete div "list-row" attribute when button clicked
+    const deleteTarget = deleteButton.parentNode;
+    document.getElementById("imcomplete-list").removeChild(deleteTarget);
   });
 
   // divタグの子要素に各要素を設定
